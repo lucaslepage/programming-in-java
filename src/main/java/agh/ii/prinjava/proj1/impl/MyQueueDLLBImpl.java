@@ -7,21 +7,21 @@ public class MyQueueDLLBImpl<E> implements MyQueue<E> {
 
     @Override
     public void enqueue(E x) {
-        throw new IllegalStateException("To be implemented");
+        elem.addLast();
     }
 
     @Override
     public E dequeue() {
-        throw new IllegalStateException("To be implemented");
+        elem.removeLast();
     }
 
     @Override
     public int numOfElems() {
-        return 0;
+        return element.numofElement();
     }
 
     @Override
     public E peek() {
-        throw new IllegalStateException("To be implemented");
+        elem.removeFirst();
     }
 }
