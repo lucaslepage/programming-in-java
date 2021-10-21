@@ -88,6 +88,21 @@ public class DLinkList<E> {
         a.prev=null;
         return a;
     }
+    
+    /**
+     * @return
+     * */
+    public int numofElement() {
+        if (this.head == null) return 0;
+
+        int size = 0;
+
+        for (Node<E> node = head; node != null; node = node.next) {
+            size++;
+        }
+
+        return size;
+    }
 
     /**
      * @return
